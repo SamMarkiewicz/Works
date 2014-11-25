@@ -275,17 +275,43 @@ i.sub-title
 
 // SARTHE
 
+.sarthe .page__details-design
+  article:first-child
+    background: lighten(#89C4F4, 15%)
+
 .banner__sarthe
   h1
     background: #3A96C1
 
-.page__mobile-cards
+.page__desktop-views
+  background: #67809F
+  padding: 5rem 0
   article
     +col(1/2, $gutter: 0)
+    text-align: center
+  img
+    width: 80%
+
+.page__mobile-cards
+  background: #3498DB
+  padding: 5rem 0 0
+  overflow: hidden
+  article
+    width: 800px
+    max-width: 100%
+    margin: 0 auto
     height: 500px
     display: block
     background: transparent url('../images/sarthe/mobile-cards.png') center center no-repeat
+    background-size: 75%
+
+.sarthe .page__endings
+  article:first-child
+    padding: 5rem 0
+    background: transparent url('../images/sarthe/mobile-view.jpg') center center no-repeat
     background-size: cover
+    img
+      visibility: hidden
 
 // FOOTER
 

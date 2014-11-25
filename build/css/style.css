@@ -608,28 +608,53 @@ i.sub-title {
 .egg .details {
   background: #F7CA18 !important; }
 
+.sarthe .page__details-design article:first-child {
+  background: #cfe7fb; }
+
 .banner__sarthe h1 {
   background: #3A96C1; }
 
-.page__mobile-cards article {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 50%;
-  margin-left: 0%;
-  margin-right: 0%;
-  height: 500px;
-  display: block;
-  background: transparent url("../images/sarthe/mobile-cards.png") center center no-repeat;
+.page__desktop-views {
+  background: #67809F;
+  padding: 5rem 0; }
+  .page__desktop-views article {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center; }
+    .page__desktop-views article:before, .page__desktop-views article:after {
+      content: '';
+      display: table; }
+    .page__desktop-views article:after {
+      clear: both; }
+    .page__desktop-views article:last-child {
+      margin-right: 0%; }
+  .page__desktop-views img {
+    width: 80%; }
+
+.page__mobile-cards {
+  background: #3498DB;
+  padding: 5rem 0 0;
+  overflow: hidden; }
+  .page__mobile-cards article {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    display: block;
+    background: transparent url("../images/sarthe/mobile-cards.png") center center no-repeat;
+    background-size: 75%; }
+
+.sarthe .page__endings article:first-child {
+  padding: 5rem 0;
+  background: transparent url("../images/sarthe/mobile-view.jpg") center center no-repeat;
   background-size: cover; }
-  .page__mobile-cards article:before, .page__mobile-cards article:after {
-    content: '';
-    display: table; }
-  .page__mobile-cards article:after {
-    clear: both; }
-  .page__mobile-cards article:last-child {
-    margin-right: 0%; }
+  .sarthe .page__endings article:first-child img {
+    visibility: hidden; }
 
 footer {
   background: #6C7A89; }
@@ -691,6 +716,15 @@ footer {
 
 .circle__egg-grey {
   background: #f7f7f7; }
+
+.circle__sarthe-white {
+  background: #f8fbf4; }
+
+.circle__sarthe-blue {
+  background: #3a96c1; }
+
+.circle__sarthe-black {
+  background: #1e1f1d; }
 
 .list__colors {
   text-align: center; }
