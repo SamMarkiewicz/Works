@@ -78,7 +78,7 @@ gulp.task('watch', function() {
   gulp.watch('source/*.slim', ['slim']);
 
   // Watch .sass files
-  gulp.watch('source/sass/*.sass', ['styles']);
+  gulp.watch('source/sass/*', ['styles']);
 
   // Watch .js files
   //gulp.watch('src/scripts/**/*.js', ['scripts']);

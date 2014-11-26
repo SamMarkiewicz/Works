@@ -1,0 +1,148 @@
+@media only screen and (min-width:321px) and (max-width:490px)
+  html
+    padding: .5rem
+  p
+    text-align: left
+    word-wrap: normal
+    // hyphens: none
+  .introduction,
+  .works
+    flex-flow: row wrap
+    article
+      width: 100%
+  .works.odd
+    article
+      &:first-child
+        order: 1
+      & + article
+        order: 2
+  .page__text
+    article
+      padding: 3rem 2rem
+  .header
+    flex-flow: row wrap
+    padding: 3rem 0
+    header, nav
+      width: 100% !important
+      justify-content: center !important
+    .logo
+      padding-left: 0
+    nav
+      margin-top: 2rem
+      ul
+        padding-right: 0
+      li
+        display: inline-block
+        margin: 0 .5rem
+  .page__banner
+    padding: 7rem 0
+    h1
+      +fontSize(20px)
+      text-align: center
+  .list__colors
+    span
+      width: 70px
+      height: 70px
+  .page__details-design
+    article
+      padding-top: 3rem
+      padding-bottom: 3rem
+    article+article
+      padding-left: 1rem
+      padding-right: 1rem
+  .banner__egg
+    background-size: cover
+  .page__details-design,
+  .page__desktop-views,
+  .page__endings
+    flex-flow: row wrap
+    article
+      width: 100%
+  .page__mobile-cards
+    padding: 2rem 0 0
+    article
+      background-size: 90%
+      height: 250px
+  .page__egg-illustrations
+    padding: 3rem 0
+    li
+      +col(1/1, $gutter: 0)
+      text-align: center
+      margin-top: 1rem
+      &:first-child
+        margin-top: 0
+      img
+        width: 40%
+  .page__video
+    height: 200px
+    video
+      position: relative !important
+      top: 0px
+      object-fit: cover
+  footer
+    li
+      padding: 2rem 0
+
+@media only screen and (min-width:491px) and (max-width:800px)
+  html
+    padding: .5rem
+  p
+    text-align: left
+    word-wrap: normal
+    // hyphens: none
+  .header
+    flex-flow: row wrap
+    padding: 3rem 0
+    header, nav
+      width: 100% !important
+      justify-content: center !important
+    .logo
+      padding-left: 0
+    nav
+      margin-top: 2rem
+      ul
+        padding-right: 0
+      li
+        display: inline-block
+        margin: 0 .5rem
+  .thumb__egg
+    background-size: 115%
+    background-position: center bottom
+  .thumb__sarthe
+    background-size: 90%
+  .home__project-details
+    div
+      padding: 0 1rem
+  .introduction
+    flex-flow: row wrap
+    article
+      width: 100%
+      &:first-child
+        order: 2
+  .page__details-design
+    flex-flow: row wrap
+    article
+      width: 100%
+    article
+      padding-top: 3rem
+      padding-bottom: 3rem
+    article+article
+      padding-left: 1rem
+      padding-right: 1rem
+  .page__video
+    height: 300px
+    video
+      position: relative !important
+      top: 0px
+      object-fit: cover
+  .page__endings
+    article + article
+      padding: 3rem 0 1rem
+  .endings__img-egg
+    background: transparent url('../images/egg/iphone.jpg') bottom center no-repeat
+    background-size: 80%
+    img
+      visibility: hidden
+  footer
+    li
+      padding: 2rem 0

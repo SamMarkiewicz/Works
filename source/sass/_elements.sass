@@ -92,6 +92,17 @@ nav
     +col(1/2, $gutter: 0)
     padding: 7rem 2rem
     box-sizing: border-box
+    &:first-child
+      padding-top: 9rem
+    & + article
+      padding: 2rem 0
+
+.works.odd
+  article
+    &:first-child
+      order: 2
+    & + article
+      order: 1
 
 .home__project-details
   text-align: center
@@ -111,12 +122,18 @@ nav
     margin-top: 2rem
 
 .thumb__egg
-  background: #F7CA18 url('../images/home-egg.png') right center no-repeat
+  background: #F7CA18 url('../images/home-egg.png') right bottom no-repeat
   background-size: 97%
-.thumb__food
-  background: transparent url('../images/home-food.jpg') center center no-repeat
+.thumb__sarthe
+  background: #3A96C1 url('../images/sarthe/thumb-sarthe.png') bottom right no-repeat
+  background-size: 60%
 
 // PAGES
+
+.egg
+  a
+    color: #E67E22
+
 .page__banner
   padding: 10rem 0
   h1
@@ -158,6 +175,7 @@ nav
   overflow: hidden
   article
     +col(1/2, $gutter: 0)
+    overflow: hidden
     &:first-child
       padding-top: 2rem
   img
@@ -321,6 +339,7 @@ footer
     +center(1000px)
   li
     +col(1/4, $gutter: 0)
+    box-sizing: border-box
     padding: 5rem 3rem
   a
     display: block
