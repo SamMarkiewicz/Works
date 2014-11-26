@@ -1,0 +1,11 @@
+{
+  "name": "GulpSetup",
+  "version": "0.1.0",
+  "description": "My Gulp setup",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-connect": "^2.2.0",
+    "gulp-slim": "0.0.10",
+    "gulp-webserver": "^0.8.7"
+  }
+}
