@@ -6,6 +6,22 @@ html
     meta name="description" content="Put the description here"
     meta name="robots" content="noindex"
     meta content="width=device-width, initial-scale=1" name="viewport"
+    link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png"
+    link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png"
+    link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png"
+    link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png"
+    link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png"
+    link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png"
+    link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png"
+    link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png"
+    link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png"
+    link rel="icon" type="image/png" href="images/favicons/favicon-192x192.png" sizes="192x192"
+    link rel="icon" type="image/png" href="images/favicons/favicon-160x160.png" sizes="160x160"
+    link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96"
+    link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16"
+    link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32"
+    meta name="msapplication-TileColor" content="#da532c"
+    meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png"
     title
       'Sam Markiewicz - Webdesign, Front-end development | Sarthe Développement
     link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
@@ -45,23 +61,31 @@ html
             li
               span.circle__sarthe-blue
               i class="sub-title"
-                '#facc00
+                '#3a96c1
             li
               span.circle__sarthe-black
               i class="sub-title"
-                '#222
+                '#1e1f1d
             li
               span.circle__sarthe-white
               i class="sub-title"
-                '#f7f7f7
+                '#f8fbf4
         article.block
-          dl.list__types
-            dt
-              'Cabin
-            dd.font__egg-set1
-              'The quick fox jumps above the lazy dog
-            dd.font__egg-set1
-              'The quick fox jumps above the lazy dog
+          div
+            dl.list__types
+              dt
+                'PT-Serif
+              dd.font__sarthe-set1
+                'The quick fox jumps above the lazy dog
+              dd.font__sarthe-set1
+                'The quick fox jumps above the lazy dog
+            dl.list__types
+              dt
+                'Lato
+              dd.font__sarte-set2
+                'The quick fox jumps above the lazy dog
+              dd.font__sarte-set2
+                'The quick fox jumps above the lazy dog
 
       section class="page__desktop-views"
         article
@@ -70,7 +94,7 @@ html
           img src="../images/sarthe/layout-article.jpg"
       section class="page__text"
         article
-          h3
+          h3.title__transition
             'Mobile
       section class="page__mobile-cards"
         article
@@ -96,11 +120,11 @@ html
       section.page__navigation
         ul
           li
-            a.button-nav.block.block href="/"
+            a.button-nav.block.block href="/egg.html"
               'Previous project
           li
-            a.button-nav.block href="/"
-              'Next Project
+            / a.button-nav.block href="/"
+            /   'Next Project
       footer
         div
           ul

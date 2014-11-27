@@ -26,7 +26,7 @@
       width: 100% !important
       justify-content: center !important
     .logo
-      padding-left: 0
+      margin-left: 0
     nav
       margin-top: 2rem
       ul
@@ -97,7 +97,7 @@
       width: 100% !important
       justify-content: center !important
     .logo
-      padding-left: 0
+      margin-left: 0
     nav
       margin-top: 2rem
       ul
@@ -119,6 +119,18 @@
       width: 100%
       &:first-child
         order: 2
+  .works
+    flex-flow: row wrap
+    article
+      width: 50% !important
+      & + article
+        padding: 5rem 0
+  .works.odd
+    article
+      &:first-child
+        order: 2
+      & + article
+        order: 1
   .page__details-design
     flex-flow: row wrap
     article

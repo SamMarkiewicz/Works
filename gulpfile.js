@@ -40,8 +40,12 @@ gulp.task('styles', function(){
 // Image optimization w/cache to avoid re-compressing the same images
 
 gulp.task('images', function() {
-  return gulp.src('source/images/**/*')
-  .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+  return gulp.src(['source/images/**/*.png', 'source/images/**/*.jpg'])
+  .pipe(cache(imagemin({
+    optimizationLevel: 3,
+    progressive: true,
+    interlaced: true
+  })))
   .pipe(gulp.dest('build/images'))
   .pipe(connect.reload())
   .pipe(notify({ message: 'Images task complete' }));
@@ -50,7 +54,7 @@ gulp.task('images', function() {
 // Clean the destination folder
 
 gulp.task('clean', function(cb) {
-  del(['build/css', 'build/images', 'build/*.html'], cb);
+  del(['build/css', 'build/images/**/*.jpg','build/images/**/*.png', 'build/*.html'], cb);
 });
 
 

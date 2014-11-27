@@ -24,15 +24,17 @@ footer ul,
   padding: 1rem
   text-decoration: none
   color: $grey
+  &:hover
+    background: #eee
 
-p
-  hyphens: auto
-  word-wrap: break-word
-  text-align: justify
+// p
+//   hyphens: auto
+//   word-wrap: break-word
+//   text-align: justify
 
 
 .header
-  padding: 5rem 0
+  padding: 3rem 0
   header
     +col(3/10, $gutter: 0)
     justify-content: flex-start !important
@@ -44,8 +46,14 @@ p
   text-decoration: none
   font-family: $default-font-title
   +fontSize(20px)
-  color: #317589
-  padding-left: 2rem
+  background: transparent url('../images/logo-square.svg') center center no-repeat
+  background-size: 90%
+  text-indent: -999em
+  width: 100px
+  height: 100px
+  // border-radius: 100%
+  // color: #317589
+  margin-left: 2rem
 
 
 nav
@@ -68,17 +76,17 @@ nav
   background: #E68364
   article
     +col(4/10, $gutter: 0)
-    padding: 5rem 2rem
+    padding: 9rem 2rem
     box-sizing: border-box
     &:first-child
-      background: #D24D57
+      background: #f43768
       color: white
       h2
         font-weight: normal
         +fontSize(24px)
         margin-bottom: 1.5rem
       p
-        font-family: $default-font-serif
+        font-family: $default-font-sans-serif
         +fontSize(16px)
         line-height: 1.75rem
     & + article
@@ -89,19 +97,22 @@ nav
 
 .works
   article
-    +col(1/2, $gutter: 0)
     padding: 7rem 2rem
     box-sizing: border-box
     &:first-child
       padding-top: 9rem
+      +col(2/3, $gutter: 0)
     & + article
-      padding: 2rem 0
+      +col(1/3, $gutter: 0)
+      padding: 8rem 0
 
 .works.odd
   article
     &:first-child
       order: 2
+      +col(2/3, $gutter: 0)
     & + article
+      +col(1/3, $gutter: 0)
       order: 1
 
 .home__project-details
@@ -123,7 +134,7 @@ nav
 
 .thumb__egg
   background: #F7CA18 url('../images/home-egg.png') right bottom no-repeat
-  background-size: 97%
+  background-size: 80%
 .thumb__sarthe
   background: #3A96C1 url('../images/sarthe/thumb-sarthe.png') bottom right no-repeat
   background-size: 60%
@@ -131,8 +142,25 @@ nav
 // PAGES
 
 .egg
-  a
-    color: #E67E22
+  .page__text
+    a
+      color: #E67E22
+      transition: all .3s ease-in-out
+      &:hover
+        color: $default-text-color
+
+.sarthe
+  .page__text
+    a
+      color: #3a96c1
+      transition: all .3s ease-in-out
+      &:hover
+        color: $default-text-color
+
+.page
+  .logo
+    background: transparent url('../images/logo-square-page.svg') center center no-repeat
+    background-size: 90%
 
 .page__banner
   padding: 10rem 0
@@ -150,7 +178,7 @@ nav
     background: white
     padding: 5rem 3rem
   p
-    font-family: $default-font-serif
+    font-family: $default-font-sans-serif
     +fontSize(16px)
     line-height: 2rem
 
@@ -184,12 +212,13 @@ nav
     bottom: -3px
 
 .list__types
-  +font($default-font-title, 24px, 700)
+  +font($default-font-title, 24px, 500)
   padding: 1rem
   dt
     margin-bottom: 2rem
     padding-bottom: 1rem
     border-bottom: 1px solid $default-border
+    font-weight: 700
   dd
     margin-bottom: 1rem
   dd + dd
@@ -212,6 +241,7 @@ i.sub-title
     left: 0
 
 .page__navigation
+  background: $carrara
   ul
     width: 100%
   li
@@ -252,6 +282,8 @@ i.sub-title
   a
     margin-top: 1rem
 
+.title__transition
+  +fontSize(18px)
 
 
 
@@ -300,6 +332,12 @@ i.sub-title
 .banner__sarthe
   h1
     background: #3A96C1
+
+.font__sarthe-set1
+  +font($sarthe-set1, 20px)
+
+.font__sarthe-set2
+  +font($sarthe-set2, 20px)
 
 .page__desktop-views
   background: #67809F
