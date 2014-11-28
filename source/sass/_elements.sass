@@ -5,7 +5,7 @@ body
   color: $default-text-color
 .container
   background: white
-  +center(1600px)
+  +center(1500px)
 
 section,
 footer ul,
@@ -26,6 +26,10 @@ footer ul,
   color: $grey
   &:hover
     background: #eee
+  &:focus, &:active
+    background: #efefef
+    border: 1px solid #ccc
+    color: #ccc
 
 // p
 //   hyphens: auto
@@ -39,6 +43,13 @@ footer ul,
     +col(3/10, $gutter: 0)
     justify-content: flex-start !important
     //background: #044F67
+  nav
+    a
+      transition: all .3s ease-in-out
+      border-bottom: 1px solid white
+      &:hover
+        color: #E68364
+        border-bottom: 1px solid #E68364
 
 .logo
   display: block
@@ -47,7 +58,7 @@ footer ul,
   font-family: $default-font-title
   +fontSize(20px)
   background: transparent url('../images/logo-square.svg') center center no-repeat
-  background-size: 90%
+  background-size: 70%
   text-indent: -999em
   width: 100px
   height: 100px
@@ -79,7 +90,7 @@ nav
     padding: 9rem 2rem
     box-sizing: border-box
     &:first-child
-      background: #f43768
+      background: #F64747
       color: white
       h2
         font-weight: normal
@@ -134,10 +145,10 @@ nav
 
 .thumb__egg
   background: #F7CA18 url('../images/home-egg.png') right bottom no-repeat
-  background-size: 80%
+  background-size: 72%
 .thumb__sarthe
   background: #3A96C1 url('../images/sarthe/thumb-sarthe.png') bottom right no-repeat
-  background-size: 60%
+  background-size: 55%
 
 // PAGES
 
@@ -160,7 +171,7 @@ nav
 .page
   .logo
     background: transparent url('../images/logo-square-page.svg') center center no-repeat
-    background-size: 90%
+    background-size: 70%
 
 .page__banner
   padding: 10rem 0
@@ -263,6 +274,9 @@ i.sub-title
     text-decoration: none
     &:hover
       background: darken($carrara, 10%)
+    &:focus, &:active
+      background: darken($carrara, 20%)
+      color: lighten($default-text-color, 15%)
 
 .details
   line-height: 1.8rem
@@ -377,21 +391,48 @@ footer
     +center(1000px)
   li
     +col(1/4, $gutter: 0)
-    box-sizing: border-box
-    padding: 5rem 3rem
   a
     display: block
     color: white
+    position: relative
+    box-sizing: border-box
+    width: 100%
+    text-align: center
+    padding: 5rem 3rem
     text-decoration: none
     +fontSize(40px)
 .link__twitter
+  transition: all .3s ease-in-out
   background: #00aced
+  &:hover
+    background: darken(#00aced, 10%)
+  &:active, &:focus
+    color: darken(white, 25%)
+    background: darken(#00aced, 25%)
 .link__git-hub
+  transition: all .3s ease-in-out
   background: $blackPlus
+  &:hover
+    background: lighten($blackPlus, 10%)
+  &:active, &:focus
+    color: darken(white, 25%)
+    background: darken($blackPlus, 25%)
 .link__instagram
+  transition: all .3s ease-in-out
   background: #517fa4
+  &:hover
+    background: darken(#517fa4, 10%)
+  &:active, &:focus
+    color: darken(white, 25%)
+    background: darken(#517fa4, 25%)
 .link__codepen
+  transition: all .3s ease-in-out
   background: #ff0084
+  &:hover
+    background: darken(#ff0084, 10%)
+  &:active, &:focus
+    color: darken(white, 25%)
+    background: darken(#ff0084, 25%)
 
 +circles
 .list__colors
