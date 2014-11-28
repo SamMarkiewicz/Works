@@ -9,7 +9,9 @@
   .works
     flex-flow: row wrap
     article
-      width: 100%
+      width: 100% !important
+      & + article
+        padding: 3rem 0
   .works.odd
     article
       &:first-child
@@ -80,7 +82,7 @@
       top: 0px
       object-fit: cover
   footer
-    li
+    li a
       padding: 2rem 0
 
 @media only screen and (min-width:491px) and (max-width:800px)
@@ -156,5 +158,5 @@
     img
       visibility: hidden
   footer
-    li
+    li a
       padding: 2rem 0
