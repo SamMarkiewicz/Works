@@ -1,16 +1,16 @@
 var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    minifycss = require('gulp-minify-css'),
-    jshint = require('gulp-jshint'),
-    uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename'),
-    notify = require('gulp-notify'),
-    cache = require('gulp-cache'),
-    slim = require("gulp-slim"),
-    connect = require('gulp-connect'),
-    del = require('del');
+sass = require('gulp-ruby-sass'),
+autoprefixer = require('gulp-autoprefixer'),
+minifycss = require('gulp-minify-css'),
+jshint = require('gulp-jshint'),
+uglify = require('gulp-uglify'),
+imagemin = require('gulp-imagemin'),
+rename = require('gulp-rename'),
+notify = require('gulp-notify'),
+cache = require('gulp-cache'),
+slim = require("gulp-slim"),
+connect = require('gulp-connect'),
+del = require('del');
 
 // Convert .slim to .html
 
@@ -30,8 +30,6 @@ gulp.task('styles', function(){
   return gulp.src('source/sass/style.sass')
   .pipe(sass({style: 'expanded',  "sourcemap=none": true}))
   .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-  .pipe(gulp.dest('build/css'))
-  .pipe(minifycss())
   .pipe(gulp.dest('build/css'))
   .pipe(connect.reload())
   .pipe(notify({ message: 'Styles task complete'}));
