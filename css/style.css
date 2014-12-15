@@ -371,7 +371,7 @@ nav a {
   width: 50%;
   margin-left: 0%;
   margin-right: 0%;
-  padding: 7rem 0rem;
+  padding: 7rem 2rem;
   box-sizing: border-box;
 }
 .introduction article:before, .introduction article:after {
@@ -1267,6 +1267,10 @@ footer a:hover {
   .introduction article + article,
   .works article + article {
     padding: 3rem 0;
+  }
+  
+  .introduction article:first-child p {
+    font-size: 20px;
   }
 
   .works.odd article:first-child {
