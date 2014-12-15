@@ -39,10 +39,21 @@ footer ul,
 
 .header
   padding: 3rem 0
+  border-bottom: 1px solid #efefef
   header
     +col(3/10, $gutter: 0)
     justify-content: flex-start !important
     //background: #044F67
+  h1
+    color: #333
+    font-weight: 400
+    margin-left: 1rem
+    line-height: 1.25rem
+    color: #555
+    span
+      color: #F64747
+    strong
+      font-weight: 700
   nav
     a
       transition: all .3s ease-in-out
@@ -58,14 +69,11 @@ footer ul,
   font-family: $default-font-title
   +fontSize(20px)
   background: transparent url('../images/logo-square.svg') center center no-repeat
-  background-size: 70%
+  background-size: 100%
   text-indent: -999em
   width: 100px
   height: 100px
   margin-left: 2rem
-  &:hover
-    background: transparent url('../images/logo-square-full.svg') center center no-repeat
-    background-size: 70%
 
 nav
   //background: #59ABE3
@@ -84,25 +92,27 @@ nav
 // INTRODUCTION
 
 .introduction
-  background: transparent url('../images/desk-new.jpg') center center no-repeat
+  background: transparent url('../images/desk-new-bw.jpg') center center no-repeat
   background-size: cover
+  border-bottom: 1px solid #efefef
   article
-    +col(4/10, $gutter: 0)
-    padding: 9rem 2rem
+    +col(5/10, $gutter: 0)
+    padding: 7rem 0rem
     box-sizing: border-box
     &:first-child
-      background: rgba(246, 71, 71, 0.8)
+      background: rgba(246, 71, 71, 0.5)
+      color: #F64747
       color: white
       h2
         font-weight: normal
-        +fontSize(24px)
-        margin-bottom: 1.5rem
+        +fontSize(40px)
+        margin-bottom: 2.5rem
       p
         font-family: $default-font-sans-serif
-        +fontSize(16px)
-        line-height: 1.75rem
+        +fontSize(27px)
+        line-height: 3.25rem
     & + article
-      +col(6/10, $gutter: 0)
+      +col(2/10, $gutter: 0)
 
     img
       width: 100%
@@ -113,18 +123,18 @@ nav
     box-sizing: border-box
     &:first-child
       padding-top: 9rem
-      +col(2/3, $gutter: 0)
+      +col(2/4, $gutter: 0)
     & + article
-      +col(1/3, $gutter: 0)
+      +col(2/4, $gutter: 0)
       padding: 8rem 0
 
 .works.odd
   article
     &:first-child
       order: 2
-      +col(2/3, $gutter: 0)
+      +col(2/4, $gutter: 0)
     & + article
-      +col(1/3, $gutter: 0)
+      +col(2/4, $gutter: 0)
       order: 1
 
 .home__project-details
@@ -146,13 +156,13 @@ nav
 
 .thumb__egg
   background: #F7CA18 url('../images/home-egg.png') right bottom no-repeat
-  background-size: 72%
+  background-size: 96%
 .thumb__sarthe
   background: #3A96C1 url('../images/sarthe/thumb-sarthe.png') bottom right no-repeat
-  background-size: 55%
+  background-size: 75%
 .thumb__nebber
   background: #ea5322 url('../images/nebber/thumb-nebber.png') bottom right no-repeat
-  background-size: 40%
+  background-size: 50%
 
 // PAGES
 
@@ -181,11 +191,8 @@ nav
 
 .page
   .logo
-    background: transparent url('../images/logo-square-page.svg') center center no-repeat
-    background-size: 70%
-    &:hover
-      background: transparent url('../images/logo-square-full.svg') center center no-repeat
-      background-size: 70%
+    background: transparent url('../images/logo-square.svg') center center no-repeat
+    background-size: 100%
 
 .page__banner
   padding: 10rem 0
