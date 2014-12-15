@@ -131,7 +131,7 @@
 /**
  * Apply a clearfix to an element.
  */
-/******ERIC MEYER RESET 2.0******** */
+/*******ERIC MEYER RESET 2.0******** */
 @import url(http://fonts.googleapis.com/css?family=Amethysta|Open+Sans:400italic,400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Cabin);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -255,6 +255,7 @@ footer ul,
 
 .header {
   padding: 3rem 0;
+  border-bottom: 1px solid #efefef;
 }
 
 .header header {
@@ -280,6 +281,19 @@ footer ul,
 .header header:last-child {
   margin-right: 0%;
 }
+.header h1 {
+  color: #333;
+  font-weight: 400;
+  margin-left: 1rem;
+  line-height: 1.25rem;
+  color: #555;
+}
+.header h1 span {
+  color: #F64747;
+}
+.header h1 strong {
+  font-weight: 700;
+}
 .header nav a {
   -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
@@ -299,16 +313,11 @@ footer ul,
   font-size: 20px;
   font-size: 1.42857rem;
   background: transparent url("../images/logo-square.svg") center center no-repeat;
-  background-size: 70%;
+  background-size: 100%;
   text-indent: -999em;
   width: 100px;
   height: 100px;
   margin-left: 2rem;
-}
-
-.logo:hover {
-  background: transparent url("../images/logo-square-full.svg") center center no-repeat;
-  background-size: 70%;
 }
 
 nav {
@@ -350,18 +359,19 @@ nav a {
 }
 
 .introduction {
-  background: transparent url("../images/desk-new.jpg") center center no-repeat;
+  background: transparent url("../images/desk-new-bw.jpg") center center no-repeat;
   background-size: cover;
+  border-bottom: 1px solid #efefef;
 }
 .introduction article {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 40%;
+  width: 50%;
   margin-left: 0%;
   margin-right: 0%;
-  padding: 9rem 2rem;
+  padding: 7rem 0rem;
   box-sizing: border-box;
 }
 .introduction article:before, .introduction article:after {
@@ -375,21 +385,22 @@ nav a {
   margin-right: 0%;
 }
 .introduction article:first-child {
-  background: rgba(246, 71, 71, 0.8);
+  background: rgba(246, 71, 71, 0.5);
+  color: #F64747;
   color: white;
 }
 .introduction article:first-child h2 {
   font-weight: normal;
-  font-size: 24px;
-  font-size: 1.71429rem;
-  margin-bottom: 1.5rem;
+  font-size: 40px;
+  font-size: 2.85714rem;
+  margin-bottom: 2.5rem;
 }
 
 .introduction article:first-child p {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-size: 1.14286rem;
-  line-height: 1.75rem;
+  font-size: 27px;
+  font-size: 1.92857rem;
+  line-height: 3.25rem;
 }
 
 .introduction article + article {
@@ -397,7 +408,7 @@ nav a {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 60%;
+  width: 20%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -427,7 +438,7 @@ nav a {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 66.66667%;
+  width: 50%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -446,7 +457,7 @@ nav a {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 33.33333%;
+  width: 50%;
   margin-left: 0%;
   margin-right: 0%;
   padding: 8rem 0;
@@ -471,7 +482,7 @@ nav a {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 66.66667%;
+  width: 50%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -490,7 +501,7 @@ nav a {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 33.33333%;
+  width: 50%;
   margin-left: 0%;
   margin-right: 0%;
   -webkit-box-ordinal-group: 2;
@@ -539,17 +550,17 @@ nav a {
 
 .thumb__egg {
   background: #F7CA18 url("../images/home-egg.png") right bottom no-repeat;
-  background-size: 72%;
+  background-size: 96%;
 }
 
 .thumb__sarthe {
   background: #3A96C1 url("../images/sarthe/thumb-sarthe.png") bottom right no-repeat;
-  background-size: 55%;
+  background-size: 75%;
 }
 
 .thumb__nebber {
   background: #ea5322 url("../images/nebber/thumb-nebber.png") bottom right no-repeat;
-  background-size: 40%;
+  background-size: 50%;
 }
 
 .egg .page__text a {
@@ -582,12 +593,8 @@ nav a {
 }
 
 .page .logo {
-  background: transparent url("../images/logo-square-page.svg") center center no-repeat;
-  background-size: 70%;
-}
-.page .logo:hover {
-  background: transparent url("../images/logo-square-full.svg") center center no-repeat;
-  background-size: 70%;
+  background: transparent url("../images/logo-square.svg") center center no-repeat;
+  background-size: 100%;
 }
 
 .page__banner {

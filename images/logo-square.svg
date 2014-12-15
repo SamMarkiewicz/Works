@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="500px"
-	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-<switch>
-	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
-		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
-		</i:pgfRef>
-	</foreignObject>
-	<g i:extraneous="self">
-		<g>
-			<path fill="#F64747" d="M480,20v460H20V20H480 M500,0H0v500h500V0L500,0z"/>
-		</g>
-		<path fill="#F64747" d="M368.98,123.31c-14.761-14.74-33.351-25.64-54.141-31.09L168.56,238.48
-			c5.45,20.799,16.35,39.39,31.09,54.15L368.98,123.31z"/>
-		<path fill="#F64747" d="M122.06,384.35c14.76,14.74,33.35,25.641,54.14,31.09l146.27-146.27c-5.45-20.8-16.35-39.38-31.09-54.15
-			L122.06,384.35z"/>
-	</g>
-</switch>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px"
+	 height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g id="Layer_1" display="none">
+	<polygon display="inline" fill="none" points="122.589,250.379 123.076,250.663 123.08,250.663 	"/>
+	<rect x="123.078" y="250.661" display="inline" fill="none" width="0" height="0.003"/>
+	<polygon display="inline" fill="none" points="123.076,250.663 122.589,250.95 123.08,250.663 	"/>
+	<polygon display="inline" fill="#E8AFAF" points="250.701,176.984 122.589,102.451 122.589,250.379 123.08,250.663 	"/>
+	<polygon display="inline" fill="#F46262" points="378.811,80.409 250.701,6.443 250.701,154.658 	"/>
+	<polygon display="inline" fill="#EF8F8F" points="250.701,6.443 122.589,80.409 250.701,154.658 	"/>
+	<polygon display="inline" fill="#F46262" points="250.701,494.883 378.811,420.927 250.701,346.67 	"/>
+	<polygon display="inline" fill="#F64747" points="250.701,324.515 250.701,324.629 378.811,398.885 378.811,250.95 
+		378.318,250.663 	"/>
+	<polygon display="inline" fill="#EF8F8F" points="250.604,346.612 122.589,420.927 250.701,494.883 250.701,346.67 	"/>
+	<polyline display="inline" fill="#F46262" points="307.091,291.964 378.318,250.836 250.701,177.157 250.701,324.515 
+		307.091,291.964 	"/>
+	<polygon display="inline" fill="#EF8F8F" points="250.701,324.515 250.701,176.984 122.589,250.379 	"/>
+</g>
+<g id="Layer_2">
+	<polygon fill="#EF8F8F" points="122.589,80.409 250.701,154.658 378.811,80.409 250.701,6.443 	"/>
+	<polygon fill="#F46262" points="250.589,80.409 250.701,154.658 378.811,80.409 250.701,6.443 	"/>
+	<polygon fill="#EF8F8F" points="122.589,421.409 250.701,495.658 378.811,421.409 250.701,347.443 	"/>
+	<polygon fill="#F46262" points="250.589,421.409 250.701,495.658 378.811,421.409 250.701,347.443 	"/>
+	<polygon fill="#E8AFAF" points="122.589,102.451 378.811,250.95 378.811,398.885 122.589,250.95 	"/>
+	<polygon fill="#EF8F8F" points="122.589,250.95 250.589,176.984 250.699,324.918 	"/>
+	<polygon fill="#F46262" points="378.811,250.95 250.589,176.984 250.699,324.918 	"/>
+	<polygon fill="#F64747" points="378.811,398.885 378.811,250.95 250.699,324.918 	"/>
+</g>
 </svg>
