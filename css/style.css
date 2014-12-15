@@ -1271,6 +1271,11 @@ footer a:hover {
   
   .introduction article:first-child p {
     font-size: 20px;
+    line-height: 2.5rem;
+  }
+  
+  .page__scene-1 p {
+    padding: 0 1rem;
   }
 
   .works.odd article:first-child {
